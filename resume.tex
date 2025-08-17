@@ -1,0 +1,111 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+    % The font could be set to Windows-specific Calibri by using the 'calibri' option
+    \documentclass[]{mcdowellcv}
+
+    % For mathematical symbols
+    \usepackage{amsmath}
+    
+      % Set applicant's personal data for header
+      \name{Zachary Morello \linebreak \normalfont\small{zacharymorello.com}}
+      \address{zm.morello@gmail.com \linebreak 5037042422}
+      \contacts{Github: z99o \linebreak LinkedIn: morelloz}
+    
+    \begin{document}
+% Print the header
+\makeheader
+\vspace{-4pt}
+
+\begin{cvsection}{Education}
+	\begin{cvsubsection}{Oregon State University}{}{Sep 2017 - Jun 2021}
+        \vspace{-4pt}
+		\begin{itemize}
+			\item BS in Computer Science. GPA: 3.5
+                \item OSU Game Development Club President (2020-2021)
+		\end{itemize}
+        \vspace{-12pt}
+	\end{cvsubsection}
+\end{cvsection}
+\begin{cvsection}{Employment}
+    \begin{cvsubsection}{Software Engineer}{HP Inc.}{Jun 2021 -- Present}
+            \vspace{-4pt}
+          \begin{itemize}%
+              \item Developed major features of a forecasting web application using C\# in ASP.NET that served over 100 managers within the company. Specific contributions:
+                \begin{itemize}%
+                    \item Designed and implemented a web page for data importing that communicated to the user percentage progress and success/error states using Javascript, HTML and CSS.
+                    \item Achieved a 500\% speed improvement in data exports by refactoring SQL queries and implementing multi-threading. Created an inheritable class for future export development.
+                    \item Implemented fail-safes that prevent service crashes on low performance hardware, ensuring they wait for sufficient memory before execution.      
+                    \item Awarded a recognition certificate from section manager for delivering innovative solutions and saving the organization thousands of hours of time with the new forecasting tools.
+                \end{itemize} 
+            \end{itemize}
+            \begin{itemize}%
+            \item Headed development of a change management Blazor app and created an interactive Figma prototype to facilitate user feedback sessions.
+                \begin{itemize}%
+                    \item Worked with subject matter experts on reverse engineering the original application. From that work, created a requirements document that has been leveraged on other projects.
+                    \item Adapted prototype into a user interface with Blazor Webassembly and C\#.
+                \end{itemize} 
+            \item Implemented a variety of bugfixes in C\# and Javascript across the organization's suite of applications, many within hours of user reports.
+            \item Contributed to daily stand-up meetings to coordinate with team members, provide progress updates, and plan daily objectives.
+            \item Led discussions about software engineering standards, leveraging new technologies for our projects and wrote documentation to ensure sustainable code practices within the team.
+            \end{itemize}    
+    \end{cvsubsection}
+    \vspace{-6pt}
+    \begin{cvsubsection}{Engineering Intern}{HP Inc.}{Jun 2020 -- Jun 2021}
+    \vspace{-4pt}
+		\begin{itemize}%
+            \item Created a site planning and mapping web application in Node JS, leveraging an open source mapping package that allowed the user to designate infrastructure zones through an interactive UI.
+		  \end{itemize}
+	   \end{cvsubsection}
+        \end{cvsection}
+        \vspace{-4pt}
+\begin{cvsection}{Personal Projects}
+	\begin{cvsubsection}{Blimpo Forest}{}{Feb 2023}
+        \vspace{-5pt}
+		\begin{itemize}
+              \item Teamed up with a 3D artist to co-develop a pet simulator game using Unity.
+              \item Communicated design requirements to the artist, who was unfamiliar with Unity, ensuring seamless asset integration.
+              \item Leveraged Blender BlendShapes to create dynamic responses to player interactions with the pet, adding to game feel.
+        \end{itemize}
+	\end{cvsubsection}
+         \vspace{-4pt}
+  	\begin{cvsubsection}{JermaKart}{}{Sep 2020 - Jun 2021}
+        \vspace{-5pt}
+        
+        \begin{itemize}
+          \item Published and supported a fully featured MarioKart style game developed in Unity, with a self-constrained development period of one month.
+          \item Designed a tactile UI with QoL features such as a volume mixer and a carousel level select screen.
+          \item Used reinforcement learning to create AI opponents with the ability to navigate complex racetracks.
+        \end{itemize}
+	\end{cvsubsection}
+ \vspace{-6pt}
+\end{cvsection}
+\begin{cvsection}{Technical Skills}
+	\begin{cvsubsection}{}{}{}
+		\begin{itemize}
+			\item Languages: C\#, C++, SQL, Python, JavaScript, HTML/CSS, GLSL
+			\item Frameworks and Libraries: ASP.NET, Blazor, Tensorflow, Pytorch, Node.js
+			\item Tools: Agile, Figma, Git, Linux, Visual Studio, Unity, Unreal
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
+
+\end{document}
